@@ -32,13 +32,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = bool(env("DEBUG"))
 
-ALLOWED_HOSTS = [""]
+ALLOWED_HOSTS = list(env("ALLOWED_HOSTS"))
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'marmut',
+    'album',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
