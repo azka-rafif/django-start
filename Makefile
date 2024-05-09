@@ -1,5 +1,5 @@
 dev:
-	python3 ./marmut/manage.py runserver
+	python3 ./marmut/manage.py runserver 0.0.0.0:8000
 
 freeze:
 	pip freeze > requirements.txt
