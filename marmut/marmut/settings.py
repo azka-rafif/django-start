@@ -39,6 +39,7 @@ ALLOWED_HOSTS = list(env("ALLOWED_HOSTS"))
 
 INSTALLED_APPS = [
     'album',
+    'user_profile',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -62,7 +63,9 @@ ROOT_URLCONF = 'marmut.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+                BASE_DIR/"templates",
+            ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
